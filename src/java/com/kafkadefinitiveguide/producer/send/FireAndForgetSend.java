@@ -16,7 +16,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 public class FireAndForgetSend {
 	public static void main(String[] args) {
 		Properties kafkaProps = new Properties();
-		kafkaProps.put("bootstrap.servers", "localhost:9092,localhost:9092");
+		kafkaProps.put("bootstrap.servers", "localhost:9092");
 		kafkaProps.put("key.serializer",    "org.apache.kafka.common.serialization.StringSerializer");
 		kafkaProps.put("value.serializer",  "org.apache.kafka.common.serialization.StringSerializer");
 		
