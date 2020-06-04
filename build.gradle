@@ -13,6 +13,14 @@ compileJava {
     sourceCompatibility = '1.8'
 }
 
+buildscript {
+  	repositories {
+    	maven { 
+     		url 'https://packages.confluent.io/maven/'
+    	}
+  	}
+}
+
 sourceSets {
     main {
         java.srcDirs = [file('src/java')]
