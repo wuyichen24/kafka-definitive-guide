@@ -32,8 +32,11 @@ jar {
 }
 
 dependencies {
+	compile group: 'org.apache.kafka',                name: 'kafka-clients',         version: '2.5.0'
 	compile group: 'com.google.code.gson',            name: 'gson',                  version: '2.3.1'
     compile group: 'com.google.guava',                name: 'guava',                 version: 'r05'
+    compile group: 'org.apache.avro',                 name: 'avro',                  version: '1.9.2'
+    compile group: 'io.confluent',                    name: 'kafka-avro-serializer', version: '5.5.0'
 
     compile fileTree(dir: 'lib', include: ['*.jar'])
 }

@@ -1,0 +1,10 @@
+{
+	"namespace": "com.kafkadefinitiveguide.producer.serializer.avroserializer",
+ 	"type": "record",
+ 	"name": "Customer",
+ 	"fields": [
+     	{"name": "id", "type": "int"},
+     	{"name": "name",  "type": "string"},
+     	{"name": "email", "type": ["string", "null"], "default": "null"}
+ ]
+}
