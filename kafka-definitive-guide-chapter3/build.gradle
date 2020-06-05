@@ -1,8 +1,6 @@
-buildscript {
-    repositories {
-        maven { 
-            url 'https://packages.confluent.io/maven/'
-        }
+repositories {
+    maven { 
+        url 'https://packages.confluent.io/maven/'
     }
 }
 
