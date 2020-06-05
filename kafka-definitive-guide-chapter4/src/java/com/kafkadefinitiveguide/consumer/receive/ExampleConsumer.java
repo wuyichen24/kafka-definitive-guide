@@ -13,6 +13,14 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * A basic example of a consumer.
+ *
+ * @author  Wuyi Chen
+ * @date    06/05/2020
+ * @version 1.0
+ * @since   1.0
+ */
 public class ExampleConsumer {
 	private static Logger logger = LoggerFactory.getLogger(ExampleConsumer.class);
 	
