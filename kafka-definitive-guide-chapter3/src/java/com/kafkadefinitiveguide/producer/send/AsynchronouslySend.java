@@ -2,10 +2,8 @@ package com.kafkadefinitiveguide.producer.send;
 
 import java.util.Properties;
 
-import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
 
 /**
  * Send messages asynchronously.
@@ -28,14 +26,5 @@ public class AsynchronouslySend {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	static class DemoProducerCallback implements Callback {
-	    @Override
-	    public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-	        if (e != null) {
-	            e.printStackTrace();
-	        }
-	    }
 	}
 }
