@@ -16,11 +16,11 @@ import org.apache.kafka.clients.producer.ProducerRecord;
  * @version 1.0
  * @since   1.0
  */
-public class SendCustomers {
+public class CustomerProducer {
 	public static void main(String[] args) {
 		Properties props = new Properties();
 		props.put("bootstrap.servers",   "localhost:9092");
-		props.put("key.serializer",      "io.confluent.kafka.serializers.KafkaAvroSerializer");
+		props.put("key.serializer",      "org.apache.kafka.common.serialization.StringSerializer");
 		props.put("value.serializer",    "io.confluent.kafka.serializers.KafkaAvroSerializer");
 		props.put("schema.registry.url", "localhost:8081");     // URL points to the schema registry.
 

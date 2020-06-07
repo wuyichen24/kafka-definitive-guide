@@ -19,7 +19,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
  * @version 1.0
  * @since   1.0
  */
-public class SendGenericAvroRecord {
+public class GenericAvroRecordProducer {
 	public static void main(String[] args) {
 		Properties props = new Properties();
 		props.put("bootstrap.servers",   "localhost:9092");
