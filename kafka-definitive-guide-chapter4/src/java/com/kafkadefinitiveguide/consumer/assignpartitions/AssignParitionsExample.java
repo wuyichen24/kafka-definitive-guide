@@ -12,7 +12,7 @@ import org.apache.kafka.common.PartitionInfo;
 import org.apache.kafka.common.TopicPartition;
 
 /**
- * Example of assigning the consumer to partitions instead of scribing a topic.
+ * Example of assigning the consumer to partitions instead of subscribing a topic.
  *
  * @author  Wuyi Chen
  * @date    06/05/2020
