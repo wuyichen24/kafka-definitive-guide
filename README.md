@@ -5,15 +5,24 @@ This repository contains the sample code the book "[Kafka: The Definitive Guide 
 ![](docs/pics/book-cover.jpg)
 
 ## Package Introduction
-### Chapter 3 (kafka-definitive-guide-chapter3)
+### Chapter 3
 | Package | Description |
 |----|----|
-| `com.kafkadefinitiveguide.producer.send` | The basic example of producers for sending messages in fire-and-forget, synchronous and  asynchronous styles. |
+| `com.kafkadefinitiveguide.producer.send` | The basic examples of producers for sending messages in different styles: fire-and-forget, synchronous and asynchronous. |
 | `com.kafkadefinitiveguide.producer.serializer.customserializer` | The example of writing a custom serializer for a POJO class. |
 | `com.kafkadefinitiveguide.producer.serializer.avroserializer` | The example of sending messages by using Avro serializer. |
 | `com.kafkadefinitiveguide.producer.partitioner.custompartitioner` | The example of writing a custom partitioner. |
 
-### Chapter 4 (kafka-definitive-guide-chapter4)
+### Chapter 4
+| Package | Description |
+|----|----|
+| `com.kafkadefinitiveguide.consumer.receive` | The basic example of a consumer. |
+| `com.kafkadefinitiveguide.consumer.commit` | The examples of different offset commit strategies: synchronous, asynchronous, combination of synchronous and asynchronous, specifying offset. |
+| `com.kafkadefinitiveguide.consumer.rebalancelisteners` | The examples of using rebalance listeners. |
+| `com.kafkadefinitiveguide.consumer.exitpollloop` | The example of how to exit a poll loop safely. |
+| `com.kafkadefinitiveguide.consumer.deserializer.customdeserializer` | The example of writing a custom deserializer for a POJO class. |
+| `com.kafkadefinitiveguide.consumer.deserializer.avrodeserializer` | The example of receiving messages by using Avro deserializer. |
+| `com.kafkadefinitiveguide.consumer.assignpartitions` | The example of assigning a consumer to partitions instead of letting the consumer subscribing a topic. |
 
 ## Documentation
 - [Avro](avro/README.md)
