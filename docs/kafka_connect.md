@@ -1,7 +1,7 @@
 # Kafka Connect
 
 ## General Setup
-### Step 1: Install Zookeeper And Kafka
+### Step 1: Install And Run Zookeeper And Kafka
 ### Step 2: Setup The Directory for Connector Plugins
 - For connecting with a certain data store, you may use a specific connector plugin. For loading those connector plugins, you have to create a directory.
   ```bash
@@ -25,3 +25,9 @@
   | `rest.host.name` | The hostname of the REST API for configuring and monitoring Connect. |
   | `rest.port` | The port of the REST API for configuring and monitoring Connect. |
   | `plugin.path` | A list of directories for loading connector plugins. |
+
+### Step 4: Run Kafka Connect worker
+  ```bash
+  cd bin
+  sh connect-distributed.sh ../config/connect-distributed.properties
+  ```
