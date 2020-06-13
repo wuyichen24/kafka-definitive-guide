@@ -1,5 +1,12 @@
 # Kafka Connect
 
+- [**General Setup**](#general-setup)
+   - [Install And Run Zookeeper And Kafka](#step-1-install-and-run-zookeeper-and-kafka)
+   - [Setup The Directory for Connector Plugins](#step-2-setup-the-directory-for-connector-plugins)
+   - [Configure Kafka Connect worker](#step-3-configure-kafka-connect-worker)
+   - [Run Kafka Connect worker](#step-4-run-kafka-connect-worker)
+   - [Manage connectors by Kafka Connect REST APIs](#step-5-manage-connectors-by-kafka-connect-rest-apis)
+
 ## General Setup
 ### Step 1: Install And Run Zookeeper And Kafka
 ### Step 2: Setup The Directory for Connector Plugins
