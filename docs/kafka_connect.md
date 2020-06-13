@@ -131,3 +131,8 @@
   |---|---|
   | `name` | The unique name of the connector. |
   | `connector.class` | The name of the Java class for the connector. Always use a value of `io.debezium.connector.mysql.MySqlConnector` for the MySQL connector. |
+  | `tasks.max` | The maximum number of tasks that should be created for this connector. The MySQL connector always uses a single task and therefore does not use this value, so the default is always acceptable. |
+  | `database.hostname` | The IP address or hostname of the MySQL database server. |
+  | `database.port` | The port of the MySQL database server. |
+  | `database.user` | The username for connecting the MySQL database server. |
+  | `database.password` | The password for connecting the MySQL database server. |
