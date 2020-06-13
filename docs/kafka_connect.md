@@ -50,3 +50,10 @@
   cd bin
   sh connect-distributed.sh ../config/connect-distributed.properties
   ```
+### Step 5: Manage connectors by Kafka Connect REST APIs
+- Common APIs
+  | Method | URL | Body | Description |
+  |---|---|---|---|
+  | GET | `http://localhost:8083/` | | Check the worker is running. |
+  | GET | `http://localhost:8083/connector-plugins` | | Display all the available connector plugins. |
+ 
