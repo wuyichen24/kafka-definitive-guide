@@ -69,14 +69,14 @@
   | DELETE | `http://localhost:8083/connectors/<connector_name>` | | Delete a connector. | 
 
 ## Connect to MySQL (Debezium)
-### Download And Deploy MySQL Connector Plugin
+### Step 1: Download And Deploy MySQL Connector Plugin
 - Download the Debezium MySQL Connector plugin from [here](https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/).
 - Extract the Debezium MySQL Connector plugin in the plugins directory.
   ```bash
   cd <kafka_root_directory>/plugins
   tar -zxf debezium-connector-mysql-1.1.2.Final-plugin.tar.gz
   ```
-### Enable MySQL Binary Logging (binlog)
+### Step 2: Enable MySQL Binary Logging (binlog)
 - MySQL binary logging is not enabled by default. You have to enable it manually.
 - Add 2 properties into the `mysqld` section of the `my.cnf`.
   ```cnf
@@ -98,3 +98,4 @@
      (Press Control-Z)
      bg
      ```
+### Step 3: 
