@@ -59,4 +59,4 @@
   | POST | `http://localhost:8083/connectors` | Connector configuration (JSON) | Add a new connector. |
   | GET | `http://localhost:8083/connectors` | | Display all the running connectors. | 
   | GET | `http://localhost:8083/connectors/<connector_name>` | | Display the detailed info of a connector. |
-  | DELETE | `http://localhost:8083/connectors/<connector_name>` | Delete a connector. | 
+  | DELETE | `http://localhost:8083/connectors/<connector_name>` | | Delete a connector. | 
