@@ -67,3 +67,7 @@
   | GET | `http://localhost:8083/connectors` | | Display all the running connectors. | 
   | GET | `http://localhost:8083/connectors/<connector_name>` | | Display the detailed info of a connector. |
   | DELETE | `http://localhost:8083/connectors/<connector_name>` | | Delete a connector. | 
+
+## Connect to MySQL (Debezium)
+### Download And Deploy MySQL Connector Plugin
+- Download the Debezium MySQL Connector plugin from [here](https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/)
