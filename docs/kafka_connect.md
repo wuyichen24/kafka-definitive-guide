@@ -77,9 +77,14 @@
   tar -zxf debezium-connector-mysql-1.1.2.Final-plugin.tar.gz
   ```
 ### Enable MySQL Binary Logging (binlog)
-- MySQL Binary Logging is not enabled by default. You have to enable it manually.
+- MySQL binary logging is not enabled by default. You have to enable it manually.
 - Add 2 properties into the `mysqld` section of the `my.cnf`.
   ```cnf
   log-bin=mysql-bin
   server-id=1
+  ```
+- Restart MySQL server.
+- Verify the binary logging is enabled by checking the `log_bin` variable is `ON`.
+  ```sql
+  show variables like 'log_bin';
   ```
