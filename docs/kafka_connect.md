@@ -8,13 +8,14 @@
   mkdir <kafka_root_directory>/plugins
   ```
 - For letting Kafka Connect know where is the plugin directory, you have to change the configuration of Kafka Connect worker.
+  
   **connect-distributed.properties**
   ```bash
   plugin.path=<kafka_root_directory>/plugins
   ```
 ### Step 3: Configure Kafka Connect worker
-- The Kafka Connect worker is configured by the configuration file **connect-distributed.properties**.
-- The **config** directory has the **connect-distributed.properties** file by default, you can modify it directly.
+- The Kafka Connect worker is configured by the configuration file `connect-distributed.properties`.
+- The `config` directory has the `connect-distributed.properties` file by default, you can modify it directly.
 - Avaliable properties:
   | Property | Description |
   |---|---|
@@ -27,7 +28,7 @@
   | `rest.host.name` | The hostname of the REST API for configuring and monitoring Connect. |
   | `rest.port` | The port of the REST API for configuring and monitoring Connect. |
   | `plugin.path` | A list of directories for loading connector plugins. |
-- Example of **connect-distributed.properties**
+- Example of `connect-distributed.properties`
   ```properties
   bootstrap.servers=localhost:9092
   group.id=connect-cluster
