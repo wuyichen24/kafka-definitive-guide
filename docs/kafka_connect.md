@@ -80,6 +80,7 @@
 - MySQL binary logging is not enabled by default. You have to enable it manually.
 - Add 2 properties into the `mysqld` section of the `my.cnf`.
   ```cnf
+  [mysqld]
   log-bin=mysql-bin
   server-id=1
   ```
