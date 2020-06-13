@@ -13,6 +13,8 @@
   plugin.path=<kafka_root_directory>/plugins
   ```
 ### Step 3: Configure Kafka Connect worker
+- The Kafka Connect worker is configured by the configuration file **connect-distributed.properties**.
+- The **config** directory has the **connect-distributed.properties** file by default, you can modify it directly.
 - Avaliable properties:
   | Property | Description |
   |---|---|
@@ -25,7 +27,23 @@
   | `rest.host.name` | The hostname of the REST API for configuring and monitoring Connect. |
   | `rest.port` | The port of the REST API for configuring and monitoring Connect. |
   | `plugin.path` | A list of directories for loading connector plugins. |
-
+- Example of **connect-distributed.properties**
+  ```properties
+  bootstrap.servers=localhost:9092
+  group.id=connect-cluster
+  key.converter=org.apache.kafka.connect.json.JsonConverter
+  value.converter=org.apache.kafka.connect.json.JsonConverter
+  key.converter.schemas.enable=true
+  value.converter.schemas.enable=true
+  offset.storage.topic=connect-offsets
+  offset.storage.replication.factor=1
+  config.storage.topic=connect-configs
+  config.storage.replication.factor=1
+  status.storage.topic=connect-status
+  status.storage.replication.factor=1
+  offset.flush.interval.ms=10000
+  plugin.path=/Users/wuyichen/kafka_2.11-2.2.0/plugins
+  ```
 ### Step 4: Run Kafka Connect worker
   ```bash
   cd bin
