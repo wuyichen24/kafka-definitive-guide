@@ -52,12 +52,12 @@
   offset.flush.interval.ms=10000
   plugin.path=/Users/wuyichen/kafka_2.11-2.2.0/plugins
   ```
-### Step 4: Run Kafka Connect worker
+### Step 4: Run Kafka Connect Worker
   ```bash
   cd bin
   sh connect-distributed.sh ../config/connect-distributed.properties
   ```
-### Step 5: Manage connectors by Kafka Connect REST APIs
+### Step 5: Manage Connectors by Kafka Connect REST APIs
 - Common APIs
   | Method | URL | Body | Description |
   |---|---|---|---|
@@ -70,4 +70,16 @@
 
 ## Connect to MySQL (Debezium)
 ### Download And Deploy MySQL Connector Plugin
-- Download the Debezium MySQL Connector plugin from [here](https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/)
+- Download the Debezium MySQL Connector plugin from [here](https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/).
+- Extract the Debezium MySQL Connector plugin in the plugins directory.
+  ```bash
+  cd <kafka_root_directory>/plugins
+  tar -zxf debezium-connector-mysql-1.1.2.Final-plugin.tar.gz
+  ```
+### Enable MySQL Binary Logging (binlog)
+- MySQL Binary Logging is not enabled by default. You have to enable it manually.
+- Add 2 properties into the `mysqld` section of the `my.cnf`.
+  ```cnf
+  log-bin=mysql-bin
+  server-id=1
+  ```
