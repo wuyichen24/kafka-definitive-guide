@@ -99,4 +99,35 @@
      (Press Control-Z)
      bg
      ```
-### Step 3: 
+### Step 3: Create Database And Tables (For Demo Only)
+- Assume you have database (schema): testdb
+- Assume you have tables
+   - customers
+   - order
+
+### Step 4: Create Connector
+- Compose the connector configration in JSON
+  ```json
+  {
+    "name": "mysql-source-connector",
+    "config": {
+      "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+      "tasks.max": "1",
+      "database.hostname": "localhost",
+      "database.port": "3306",
+      "database.user": "root",
+      "database.password": "6ytow2-;S3lA",
+      "database.server.id": "001",
+      "database.server.name": "mysqlserver1",
+      "database.whitelist": "testdb",
+      "database.serverTimezone": "UTC",
+      "database.history.kafka.bootstrap.servers": "localhost:9092",
+      "database.history.kafka.topic": "schema-changes.testdb"  
+    }
+  }
+  ```
+- Explanation of parameters
+  | Parameter | Description |
+  |---|---|
+  | `name` | The unique name of the connector. |
+  | `connector.class` | The name of the Java class for the connector. Always use a value of `io.debezium.connector.mysql.MySqlConnector` for the MySQL connector. |
