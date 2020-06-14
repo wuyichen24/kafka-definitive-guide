@@ -145,4 +145,4 @@
   | `database.serverTimezone` | The timezone for the MySQL database server. If not specify, the MySQL database server will throw an error like "The server time zone value 'XXX' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support." |
   | `database.history.kafka.bootstrap.servers` | The list of the hostname and port pairs for Kafka brokers. |
   | `database.history.kafka.topic` | The topic to store the schema change history of the database. |
-- For more parameters, check this [page](https://debezium.io/documentation/reference/1.1/connectors/mysql.html#mysql-connector-configuration-properties_debezium).
+  For more parameters, check this [page](https://debezium.io/documentation/reference/1.1/connectors/mysql.html#mysql-connector-configuration-properties_debezium).
