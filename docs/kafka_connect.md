@@ -147,3 +147,7 @@
   | `database.history.kafka.topic` | The topic to store the schema change history of the database. |
   
   For more parameters, check this [page](https://debezium.io/documentation/reference/1.1/connectors/mysql.html#mysql-connector-configuration-properties_debezium).
+- Make a HTTP request to Kafka connect worker to create this new connector
+  | Method | URL | Body |
+  |---|---|---|
+  | POST | `http://localhost:8083/connectors` | Connector configuration (JSON) |
