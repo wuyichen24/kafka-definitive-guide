@@ -382,3 +382,5 @@
 ## References
 - [Debezium Tutorial](https://debezium.io/documentation/reference/1.1/tutorial.html)
 - [Debezium Connector for MySQL](https://debezium.io/documentation/reference/1.1/connectors/mysql.html)
+- [MySQL Setting the Replication Master Configuration](https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html)
+- [Debezium MySQL Source Connector for Confluent Platform](https://docs.confluent.io/current/connect/debezium-connect-mysql/index.html)
