@@ -136,3 +136,10 @@
   | `database.port` | The port of the MySQL database server. |
   | `database.user` | The username for connecting the MySQL database server. |
   | `database.password` | The password for connecting the MySQL database server. |
+  | `database.server.id` | The numeric ID of the MySQL database server. |
+  | `database.server.name` | The name of the MySQL database server. This name is the logical identifier for the MySQL server or cluster of servers. This name will be used as the prefix for all Kafka topics. |
+  | `database.whitelist` | The list of databases (schemas) will be monitored. (comma-separated) | 
+  | `database.blacklist` | The list of databases (schemas) will be be excluded from monitoring. (comma-separated) | 
+  | `table.whitelist` | The list of tables will be monitored. (comma-separated) | 
+  | `table.blacklist` | The list of tables will be be excluded from monitoring. (comma-separated) | 
+  | `database.serverTimezone` | The timezone for the MySQL database server. If not specify, the MySQL database server will throw an error like "The server time zone value 'XXX' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support." |
