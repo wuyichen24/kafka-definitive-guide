@@ -12,6 +12,7 @@
    - [Create Database And Tables](#step-3-create-database-and-tables-for-demo-only)
    - [Create Connector](#step-4-create-connector)
    - [Verify](#step-5-verify)
+- [**References**](#references)
 
 ## General Setup
 ### Step 1: Install And Run Zookeeper And Kafka
@@ -377,3 +378,7 @@
     }
   }
   ```
+
+## References
+- [Debezium Tutorial](https://debezium.io/documentation/reference/1.1/tutorial.html)
+- [Debezium Connector for MySQL](https://debezium.io/documentation/reference/1.1/connectors/mysql.html)
