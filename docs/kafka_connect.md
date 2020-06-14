@@ -6,6 +6,12 @@
    - [Configure Kafka Connect worker](#step-3-configure-kafka-connect-worker)
    - [Run Kafka Connect worker](#step-4-run-kafka-connect-worker)
    - [Manage connectors by Kafka Connect REST APIs](#step-5-manage-connectors-by-kafka-connect-rest-apis)
+- [**Connect to MySQL (Debezium)**](#connect-to-mysql-debezium)
+   - [Download And Deploy MySQL Connector Plugin](#step-1-download-and-deploy-mysql-connector-plugin)
+   - [Enable MySQL Binary Logging (binlog)](#step-2-enable-mysql-binary-logging-binlog)
+   - [Create Database And Tables](#step-3-create-database-and-tables-for-demo-only)
+   - [Create Connector](#step-4-create-connector)
+   - [Verify](#step-5-verify)
 
 ## General Setup
 ### Step 1: Install And Run Zookeeper And Kafka
