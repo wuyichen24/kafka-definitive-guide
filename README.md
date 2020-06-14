@@ -26,3 +26,4 @@ This repository contains the sample code the book "[Kafka: The Definitive Guide 
 
 ## Documentation
 - [Avro](avro/README.md)
+- [Command Memo](docs/command_memo.md)
