@@ -89,6 +89,7 @@
   [mysqld]
   log-bin=mysql-bin
   server-id=1
+  binlog-format=row
   ```
 - Restart MySQL server.
 - Verify the binary logging is enabled by checking the `log_bin` variable is `ON`.
