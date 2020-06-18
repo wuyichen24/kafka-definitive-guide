@@ -4,6 +4,9 @@ This repository contains the sample code the book "[Kafka: The Definitive Guide 
 
 ![](docs/pics/book-cover.jpg)
 
+## Study Notes
+- [Google Doc](https://docs.google.com/document/d/1JJqllxpVwzTJLrGILxJ10LT5_lhi8ZbKlHcrE54A6Rc/edit?usp=sharing)
+
 ## Package Introduction
 ### Chapter 3
 | Package | Description |
