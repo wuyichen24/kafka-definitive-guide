@@ -100,7 +100,9 @@
 - Troubleshooting
    - You may need to create a new `my.cnf` file if it is not existing.
    - You can specify the path of the new `my.cnf` file in MySQL Workbench by clicking the wrench icon next to "INSTANCE".
+     ![](https://github.com/wuyichen24/kafka-definitive-guide/blob/master/docs/pics/mysql-configuration-file-path.png)
    - You can use MySQL Workbench to create a new `my.cnf` file by clicking the "Options File" under "INSTANCE".
+     ![](https://github.com/wuyichen24/kafka-definitive-guide/blob/master/docs/pics/mysql-binlog.png)
    - If restarting MySQL server cannot apply the new parameter values of the `my.cnf` file into the system variables, you need to start MySQL server by command-line.
      ```bash
      sudo /usr/local/mysql/bin/mysqld_safe

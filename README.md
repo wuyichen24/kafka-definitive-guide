@@ -1,8 +1,18 @@
 # kafka-definitive-guide
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0) 
+
 This repository contains the sample code the book "[Kafka: The Definitive Guide (Gwen Shapira, Neha Narkhede, and Todd Palino)](http://shop.oreilly.com/product/0636920044123.do)" and the personal study note of Apache Kafka.
 
 ![](docs/pics/book-cover.jpg)
+
+## Study Notes
+- [Google Doc](https://docs.google.com/document/d/1JJqllxpVwzTJLrGILxJ10LT5_lhi8ZbKlHcrE54A6Rc/edit?usp=sharing)
+
+## Documentation
+- [Avro](avro/README.md)
+- [Kafka Connect](docs/kafka_connect.md)
+- [Command Memo](docs/command_memo.md)
 
 ## Package Introduction
 ### Chapter 3
@@ -23,7 +33,3 @@ This repository contains the sample code the book "[Kafka: The Definitive Guide 
 | `com.kafkadefinitiveguide.consumer.deserializer.customdeserializer` | The example of writing a custom deserializer for a POJO class. |
 | `com.kafkadefinitiveguide.consumer.deserializer.avrodeserializer` | The example of receiving messages by using Avro deserializer. |
 | `com.kafkadefinitiveguide.consumer.assignpartitions` | The example of assigning a consumer to partitions instead of letting the consumer subscribing a topic. |
-
-## Documentation
-- [Avro](avro/README.md)
-- [Command Memo](docs/command_memo.md)
