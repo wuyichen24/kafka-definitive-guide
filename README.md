@@ -13,7 +13,7 @@ This repository contains the sample code the book "[Kafka: The Definitive Guide 
 - [Avro](avro/README.md)
 - [Kafka Connect](docs/kafka_connect.md)
 - [Command Memo](docs/command_memo.md)
-- [Getting Started](docs/getting_started.md)
+- [Installation](docs/installation.md)
 
 ## Package Introduction
 ### Chapter 3
