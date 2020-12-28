@@ -1,4 +1,4 @@
-# Getting Started
+# Installation
 - [**Install Apache ZooKeeper**](#install-apache-zookeeper)
 - [**Install Apache Kafka**](#install-apache-kafka)
 
